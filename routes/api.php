@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CentralTelefonesController;
 use App\Http\Controllers\NoticiasController;
 use App\Http\Controllers\CanalDaMulherController;
+use App\Http\Controllers\EducacaoController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,6 +20,7 @@ use App\Http\Controllers\CanalDaMulherController;
 Route::apiResource('central-telefones', CentralTelefonesController::class);
 Route::apiResource('noticias', NoticiasController::class);
 Route::apiResource('canal-da-mulher', CanalDaMulherController::class);
+Route::apiResource('educacao', EducacaoController::class);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
